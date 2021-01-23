@@ -12,6 +12,13 @@ for length in data:
 	print(total)
 
 total = total/len(data)
+
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('總共有', len(new), '筆留言長度小於100')
+print(new[0])
 print('留言平均長度為： ', total, '字')
 print('檔案讀取完了, 總共有', len(data), '筆資料')
 
